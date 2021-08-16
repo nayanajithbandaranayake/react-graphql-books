@@ -3,7 +3,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import BookList from "./components/BookList";
 import AddBook from "./components/AddBook";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import UpdateBook from "./components/UpdataBook";
+import UpdateBook from "./components/UpdateBook";
 
 const client = new ApolloClient({
   uri: process.env.REACT_APP_GRAPHQL_URI,

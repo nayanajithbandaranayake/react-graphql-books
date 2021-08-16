@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import UpdateBook from "./components/UpdataBook";
 
 const client = new ApolloClient({
-  uri: "http://localhost:8000/graphql",
+  uri: process.env.REACT_APP_GRAPHQL_URI,
   cache: new InMemoryCache(),
 });
 

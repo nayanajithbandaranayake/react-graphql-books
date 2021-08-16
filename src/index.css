@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.submit-btn {
+  background: #2341ee;
+}
+
+.update-btn {
+  background: #09bb17;
+}
+.delete-btn {
+  background: #ff0000;
+}
+
+.book-list {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.book-list-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 10em auto;
+  place-items: center;
+}
+.book-list-title {
+  margin-top: 2em;
+  font-size: 2.4em;
+}
+
+aside {
+  background: rgb(255, 82, 111);
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  overflow: hidden;
+  background: white;
+  position: fixed;
+  padding: 2em 4em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em 0.4em rgba(0, 0, 0, 0.1);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
